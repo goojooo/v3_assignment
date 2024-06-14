@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Analysis of CSV File</title>
+    <style>
+      div {
+        text-align: center;
+      }
+      div table {
+        margin-left: 42% !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Data Analysis</h1>
+      <h2>Sample</h2>
+      <div>{{ sample|safe }}</div>
+      <h2>Summary</h2>
+      <div>{{ summary|safe }}</div>
+      <h2>Summary Visualization</h2>
+      <img src="data:image/png;base64,{{ plot_url }}" />
+    </div>
+  </body>
+</html>
